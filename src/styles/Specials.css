@@ -1,0 +1,128 @@
+.specials {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    padding: 0 15%;
+}
+
+.specials .menuTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.specials .menuBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.specials .dishItem {
+    display: flex;
+    max-width: 257px;
+    height: 490px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #edefee;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    margin-right: 5px;
+    transition: box-shadow 0.2s ease-in, transform 0.2s ease-in;
+}
+
+.specials .dishItem:hover {
+ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+ transform: scale(1.01);
+
+}
+
+.specials .dishItem:last-of-type {
+    margin-right: 0;
+}
+
+.specials img {
+    width:100%;
+    height: 40%;
+    object-fit: cover;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+.specials .dishItem .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.specials .dishItem .item p {
+    color: #EE9972;
+    padding-right: 7%;
+}
+.specials .dishItem .item h6 {
+    padding-left: 7%;
+    margin: 20px 0;
+
+}
+.specials .dishItem #foodDescription {
+    padding: 0 7%;
+
+}
+
+.specials .dishItem .delivery {
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+    margin-bottom: 30px;
+    margin-top: auto;
+
+}
+
+.specials .dishItem #orderIcon {
+    max-height: 30px;
+    max-width: 30px;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+.specials .dishItem .delivery a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.specials .dishItem .delivery a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px){
+    .specials .menuBottom {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .specials .dishItem {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .specials .menuTop {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .specials .menuTop h5 {
+        margin-bottom: 20px;
+    }
+
+}
